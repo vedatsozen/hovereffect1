@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+ 
+</head>
+<body class="h-screen w-screen bg-red-500 flex flex-col justify-center items-center p-12">
+
+    <h1 class="text-white text-5xl font-bold"  style="letter-spacing: 5px;">LET'S PRACTICE JAVASCRIPT</h1>
+
+    <div class="container mx-auto w-11/12 flex justify-center items-center mt-12 gap-8">
+
+       <img src="imgs/1.png" class="myimg w-auto border-2">
+       <img src="imgs/2.png" class="myimg w-auto border-2">
+       <img src="imgs/3.png" class="myimg w-auto border-2">
+
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        $(".myimg").mouseover(function() {
+            $(".myimg").not(this).css("opacity", "0.5");
+        })
+        .mouseout(function() {
+            $(".myimg").css("opacity", "1");
+        });
+    })
+</script>
+
+</html>

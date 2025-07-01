@@ -1,0 +1,14 @@
+.container {
+    height: 400px;
+}
+
+.myimg {
+    height: 100%;
+    width: 33% !important;
+}
+
+.myimg:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
